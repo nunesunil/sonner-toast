@@ -1,0 +1,61 @@
+{
+	"name": "sonner-toast",
+	"type": "module",
+	"version": "1.0.0",
+	"description": "Sonner-compatible toast notifications for React 19",
+	"author": "nunesunil",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nunesunil/sonner-toast.git"
+	},
+	"homepage": "https://github.com/nunesunil/sonner-toast#readme",
+	"bugs": {
+		"url": "https://github.com/nunesunil/sonner-toast/issues"
+	},
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": "./dist/index.js",
+		"./package.json": "./package.json",
+		"./style.css": "./dist/style.css"
+	},
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"sideEffects": [
+		"**/*.css",
+		"./dist/style.css"
+	],
+	"engines": {
+		"node": ">=22"
+	},
+	"peerDependencies": {
+		"react": "^19",
+		"react-dom": "^19"
+	},
+	"peerDependenciesMeta": {
+		"react-dom": {
+			"optional": false
+		}
+	},
+	"scripts": {
+		"build": "tsdown",
+		"dev": "tsdown --watch",
+		"typecheck": "tsc --noEmit",
+		"prepublishOnly": "pnpm run build",
+		"prepack": "pnpm run build"
+	},
+	"devDependencies": {
+		"@tsdown/css": "^0",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"react": "^19",
+		"react-dom": "^19",
+		"tsdown": "^0",
+		"typescript": "^6"
+	}
+}
