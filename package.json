@@ -1,7 +1,7 @@
 {
 	"name": "sonner-toast",
 	"type": "module",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "Sonner-compatible toast notifications for React 19",
 	"author": "nunesunil",
 	"repository": {
