@@ -1,7 +1,7 @@
 # sonner-toast
 
-[npm version](https://www.npmjs.com/package/sonner-toast)
-[license](https://github.com/nunesunil/sonner-toast/blob/main/LICENSE)
+[![npm version](https://img.shields.io/npm/v/sonner-toast)](https://www.npmjs.com/package/sonner-toast)
+[![license](https://img.shields.io/npm/l/sonner-toast)](https://github.com/nunesunil/sonner-toast/blob/main/LICENSE)
 
 An opinionated toast component for React 19. API and styling are compatible with [Sonner](https://sonner.emilkowal.ski/) — use the same `toast()` calls, `<Toaster />` props, and `data-sonner-*` CSS hooks.
 
